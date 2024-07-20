@@ -23,7 +23,7 @@ for(let select of dropdown){
         updateFlag(evt.target); 
     })
 }
-
+//  function for update exchange rate
 const updateExchangeRate = async()=>{
     let amount = document.querySelector(".amount input");
     let amtVal = amount.value;
@@ -42,7 +42,7 @@ const updateExchangeRate = async()=>{
     let finalAmount = amtVal * rate; 
     msg.innerText  = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`
 } 
-
+// function for updating flag
 const updateFlag = (element) =>{
     let currCode = element.value; 
     let countryCode = countryList[currCode]; 
